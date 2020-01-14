@@ -1,0 +1,5 @@
+# PUBLIC_PATH: "/px"
+PUBLIC_PATH: ""
+DEFAULT_SEARCH: "saber"
+IMG_PREFIX: "https://test.img.cheerfun.dev/get/"
+# IMG_PREFIX: "/get/"

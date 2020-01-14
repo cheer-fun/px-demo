@@ -1,0 +1,43 @@
+.px-header
+  position fixed
+  box-sizing border-box
+  width 100vw
+  top 0
+  right 0
+  z-index 2
+  &__search
+    display flex
+    width 100vw
+    padding 16px
+    background white
+    .px-input
+      margin-right 16px
+      &__inner
+        background $bg-grey
+      .px-icon
+        color $text-grey
+        transition color .3s
+  &__white
+    background white
+    .px-icon
+      color $text-grey
+  &__dark
+    background $bg
+  &__white
+  &__dark
+  &__opacity
+    position absolute
+    padding 10px 20px
+    i
+      color $primary
+  &__home
+    padding 20px
+    background transparent
+    i
+      color white
+  .f-right
+    float right
+    button
+      outline none
+    i
+      font-size 20px

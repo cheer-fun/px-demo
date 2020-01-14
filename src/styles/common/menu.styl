@@ -1,0 +1,81 @@
+.px-menu,
+.px-container
+  float left
+
+.px-container
+  position relative
+  width 100vw
+  min-height 100vh
+  margin-left 60vw
+  overflow-y scroll
+  transition all .5s
+
+.px-mask
+  position fixed
+  width 100vw
+  top 0
+  right 0
+  height 100vh
+  background $bg-mask
+  z-index 2
+  opacity 0
+  transition opacity .3s
+  pointer-events none
+  &.is-active
+    opacity 1
+    pointer-events all
+
+.px-wrapper
+  position relative
+  width 100vw
+  min-height 100%
+  overflow-y auto
+  right 0
+  .px-container
+    transform translateX(-60vw)
+  .px-header
+    transition all .3s
+    opacity 1
+  &.is-active
+    .px-container
+      transform translateX(0)
+    .px-header
+      opacity 0
+    .px-menu
+      // transform translatex(0);
+      transition all .3s
+      opacity 1
+      pointer-events all
+      // transition-delay .3s
+
+
+.px-menu
+  position fixed
+  top 0
+  left 0
+  width 60vw
+  height 100vh
+  background white
+  z-index 2
+  opacity 0
+  transition all .1s
+  transition-delay 0s
+  // transform translatex(-60vw);
+  pointer-events none
+  a
+    rg-text()    
+    text-decoration none
+  &__links
+    margin-top 80px
+    &--item
+      position relative
+      display flex
+      align-items center
+      padding 8px 32px
+      box-sizing border-box
+      width 100%
+      img
+        height 32px
+        width 32px
+        object-fit contain
+        margin-right 20px

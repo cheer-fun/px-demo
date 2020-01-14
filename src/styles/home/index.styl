@@ -1,0 +1,35 @@
+.home
+  full-v()
+  background $bg
+  z-index 1
+  &-bg
+    full-size()
+    z-index -1
+    &-item
+      full-size()
+      object-fit cover
+      transition opacity .4s
+      opacity 0
+      &[aria-current="show"]
+        opacity 1
+  &-search
+    m-center-horizontal()
+    width 300px
+    height 40px
+    padding 8px 0
+    &__wrapper
+      position absolute
+      top 30%
+      width 100vw
+      height 40px
+    &__decorator
+      position absolute
+      width 128px
+      bottom 24px
+      left 52px
+  &-footer
+    position fixed
+    bottom 12px
+    width 100%
+    text-align center
+    text($text-grey)

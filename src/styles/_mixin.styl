@@ -1,0 +1,41 @@
+full-v()
+  position fixed
+  width 100vw
+  height 100vh
+  
+full-size()
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  overflow hidden
+
+m-center-horizontal()
+  left 0
+  right 0
+  margin 0 auto
+
+m-center-vertical()
+  top 0
+  bottom 0
+  margin auto 0
+  
+m-center()
+  m-center-vertical()
+  m-center-horizontal()
+  margin auto
+
+f-center()
+  display flex
+  justify-content center
+  
+text(color = $text-grey)
+  font-size 14px
+  font-weight 400
+  line-height 1.5
+  color color
+
+rg-text(color = $text-grey)
+  text(color)
+  font-size 16px
